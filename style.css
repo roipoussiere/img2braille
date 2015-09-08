@@ -1,0 +1,41 @@
+#text-content {
+	border: 1px solid gray;
+	margin: auto;
+}
+
+#text-content p {
+	font-size: 12px;
+	line-height: 12px;
+	padding: 0px;
+	margin: 0px;
+	margin-left: -1px;
+	font-weight: bold;
+	letter-spacing: -2px;
+	
+}
+
+#thumbnail {
+	display: none;
+	max-width: 200px;
+	max-height: 200px;
+}
+
+canvas {
+	display: none;
+	padding: 5px;
+}
+
+form {
+	margin: 3px;
+}
+
+#input-file, #type {
+	height: 25px;
+	padding: 2px;
+}
+
+#threshold, #width {
+	height: 13px;
+	padding-top: 6px;
+	width: 60px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Dithering</title>
+		<link href="normalize.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	</head>
+		<body>
+		<form onsubmit="return false;">
+			<input id="input-file" type="file">Input file</input>
+			<select id="type">
+				<option value="none">None</option>
+				<option value="bayer">Bayer</option>
+				<option value="floyd">Floyd Steinberg</option>
+				<option value="atkinson">Atkinson</option>
+			</select>
+			<input id="max-width" type="checkbox">Max width</input>
+			<input id="width" type="number" min="0" value="200">Width</input>
+			<input id="threshold" type="number" min="0" max="255" value="128">Threshold</input>
+		</form>
+
+		<img id="thumbnail" />
+		<canvas id="original"></canvas>
+		<canvas id="dither"></canvas>
+		<div id="text-content"></div>
+
+		<script src="monochrome.js"></script>
+		<script src="index.js"></script>
+		</body>
+</html>
